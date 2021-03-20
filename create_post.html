@@ -1,0 +1,362 @@
+<!DOCTYPE html  lang="en" dir="rtl>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <title>زاد - بوابتك الاول للمزادات</title>
+   <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon.png">
+   <link rel="icon" type="image/png" href="images/favicon.png">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css">
+   <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.css">
+   <style>
+      .owl-carousel {
+      touch-action: manipulation;
+      }
+      .owl-carousel,
+      .bx-wrapper { direction: ltr!important; }
+      .owl-carousel .owl-item { direction: rtl; }
+      .owl-controls {
+      float: none !important;
+      }
+      .owl-carousel .owl-item,
+      /* .owl-wrapper {
+      float: right;
+      } */
+      .owl-prev {
+      left : 0px !important;
+      right : auto !important;
+      }
+      .owl-next {
+      left : 20px !important;
+      right : auto !important;
+      }
+      .owl-stage-outer{
+      position:relative !important;
+      overflow:hidden !important;
+      -webkit-transform:translate3d(0,0,0) !important;
+      direction: ltr !important;
+      }
+   </style>
+   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body data-عقاري معتمد-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed="">
+   <nav class="navbar top-navbar" role="navigation">
+      <div class="container">
+         <div class="row margin-none">
+            <div class="navbar-header col-sm-2">
+               <!-- <a class="navbar-brand" href="index.html"><img alt="logo" src="img/logo.jpeg" width="35"></a> -->
+               <!-- <a class="navbar-brand collapse navbar-collapse" href="index.html"><img alt="logo" src="img/logo.jpeg" width="35"></a> -->
+               <a class="navbar-brand navbar-toggle pull-right"  style="background-color: #ffffff; margin-top: 0 !important; margin-bottom: 0 !important; margin-left: 15px" href="index.html"><img alt="logo" src="img/logo.jpeg" width="30"></a>
+               <button type="button" class="navbar-toggle pull-right" data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <a class="navbar-brand pull-right" href="index.html"><img alt="logo" src="img/logo.jpeg" width="35"></a>
+               <ul class="nav navbar-nav pull-right" style="margin-right: 50px;">
+                  <li><a href="categories.html">المقتنيات الخاصة</a></li>
+                  <li><a href="categories.html">أثاث ومفروشات </a></li>
+                  <li><a href="categories.html">أجهزة الكترونية وكهربائية</a></li>
+                  <li class="dropdown">
+                     <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">  العقارات <b class="caret"></b></a>
+                     <ul class="dropdown-menu">
+                        <li>
+                           <a href="categories.html"><i class="fa fa-fw fa-angle-right"></i> الاراضي</a>
+                        </li>
+                        <li>
+                           <a href="categories.html"><i class="fa fa-fw fa-angle-right"></i> الفلل</a>
+                        </li>
+                        <li>
+                           <a href="categories.html"><i class="fa fa-fw fa-angle-right"></i> العمار</a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="user-login pull-left">
+                  <a href="signup.html">انظم لنا</a>
+                  <span>أو</span>
+                  <a class="btn btn-md btn-primary" href="login.html">سجل دخولك</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <section class="breadcumb_area">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 text-center">
+               <div class="breadcumb_section">
+                  <div class="page_title">
+                     <h3>نشر مزاد</h3>
+                  </div>
+                  <div class="page_pagination">
+                     <ul>
+                            <li>نشر مزاد</li>
+                            <li><i class="fa fa-angle-left" aria-hidden="true"></i></li>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        
+                     
+                        
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="create-post">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+               <div class="login-panel widget margin-bottom-none">
+                  <div class="login-body">
+                     <form>
+                        <div class="form-group">
+                           <label class="control-label">العنوان <span class="required">*</span></label>
+                           <input type="text" placeholder="فلة دوبلوكس ..." required="required" value="" class="form-control border-form" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                        </div>
+                        <div class="form-group">
+                           <label class="control-label">القسم <span class="required">*</span></label>
+                           <select class="form-control border-form">
+                              <option selected="">جميع الاقسام</option>
+                              <option>الفلل</option>
+                              <option>الاراضي الاستثمارية</option>
+                              <option>العمارات التجارية</option>
+                              <option>العمارات التجارية</option>
+                              <option>العمارات التجارية</option>
+                           </select>
+                        </div>
+                        <div class="form-group">
+                           <div class="row">
+                              <label class="col-sm-3 control-label">الحالة <span class="required">*</span></label>
+                              <div class="col-sm-9">
+                                 <div class="radio radio-info radio-inline">
+                                    <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
+                                    <label for="inlineRadio1"> جديد </label>
+                                 </div>
+                                 <div class="radio radio-info radio-inline">
+                                    <input type="radio" id="inlineRadio2" value="option1" name="radioInline">
+                                    <label for="inlineRadio2"> مستخدم </label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="control-label">بداية المزاد <span class="required">*</span></label>
+                           <div class="input-group">
+                              <span class="input-group-addon"></i></span>
+                              <input type="text" placeholder="123,443" required="required" value="" class="form-control border-form">
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label class="control-label">ًإضافات صور</label>
+                           <input type="file" class="filestyle" id="filestyle-0" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
+                           <div class="bootstrap-filestyle input-group"><input type="text" class="border-form form-control " placeholder="" disabled=""> <span class="group-span-filestyle input-group-btn" tabindex="0"><label for="filestyle-0" class="btn btn-primary "><span class="icon-span-filestyle glyphicon glyphicon-folder-open"></span> <span class="buttonText">حدد الصور</span></label></span></div>
+                           <span class="help-block"></span>
+                           <input type="file" class="filestyle" id="filestyle-1" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
+                           <div class="bootstrap-filestyle input-group"><input type="text" class="border-form form-control " placeholder="" disabled=""> <span class="group-span-filestyle input-group-btn" tabindex="0"><label for="filestyle-1" class="btn btn-primary "><span class="icon-span-filestyle glyphicon glyphicon-folder-open"></span> <span class="buttonText">حدد الصور</span></label></span></div>
+                           <span class="help-block"></span>
+                           <input type="file" class="filestyle" id="filestyle-2" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
+                           <div class="bootstrap-filestyle input-group"><input type="text" class="border-form form-control " placeholder="" disabled=""> <span class="group-span-filestyle input-group-btn" tabindex="0"><label for="filestyle-2" class="btn btn-primary "><span class="icon-span-filestyle glyphicon glyphicon-folder-open"></span> <span class="buttonText">حدد الصور</span></label></span></div>
+                           <span class="help-block"></span>
+                           <input type="file" class="filestyle" id="filestyle-3" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
+                           <div class="bootstrap-filestyle input-group"><input type="text" class="border-form form-control " placeholder="" disabled=""> <span class="group-span-filestyle input-group-btn" tabindex="0"><label for="filestyle-3" class="btn btn-primary "><span class="icon-span-filestyle glyphicon glyphicon-folder-open"></span> <span class="buttonText">حدد الصور</span></label></span></div>
+                           <span class="help-block"></span>
+                        </div>
+                        <div class="form-group">
+                           <label class="control-label">الموقع <span class="required">*</span></label>
+                           <select class="form-control border-form">
+                              <option selected="">حدد المدينة</option>
+                              <option>الرياض</option>
+                              <option>جدة</option>
+                              <option>مكة المكرمة</option>
+                              <option>المدينة المنورة</option>
+                              <option>بريدة</option>
+                              <option>عنيزة</option>
+                              <option>أبهاء</option>
+                           </select>
+                        </div>
+                        <div class="form-group">
+                           <label class="control-label">وصف المزاد <span class="required">*</span></label>
+                           <textarea placeholder="فلة دوبلكس جديدة بدرج داخلي وتصميم حديث ... " class="form-control border-form"></textarea>
+                        </div>
+                        <div class="form-group">
+                        
+                        </div>
+                        
+                        <div class="form-group">
+                           <label class="control-label">رقم الجوال <span class="required">*</span></label>
+                           <div class="input-group">
+                              <span class="input-group-addon">+966</span>
+                              <input type="text" placeholder="e.g. 123456789" required="required" value="" class="form-control border-form">
+                           </div>
+                        </div>
+                        <div class="form-group text-right margin-bottom-none">
+                           <button type="submit" class="btn btn-success"><i class="fa fa-save"></i> نشر المزاد</button>
+                           <button type="submit" class="btn btn-danger"><i class="fa fa-close"></i> إلغاء</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <footer>
+      <section class="footer-Content">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="footer-widget">
+                     <h3 class="block-title">من نحن؟</h3>
+                     <div class="textwidget">
+                        <p>
+                           نحن مجموعة من ريادي الاعمال نعمل بحب وشغف لبناء وتطوير منطومة 
+                           متكاملة تساعد كل من يريد بيع اي مقتنيات او ممتلكات خاصة على 
+                           عرضها بمزاد علني بشكل سلس وامن وسهل . 
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="footer-widget">
+                     <h3 class="block-title">صفحات مهمة</h3>
+                     <ul class="menu">
+                        <li><a href="#">سياسة الاستخدام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الاسئلة الشائعة</a></li>
+                        <li><a href="#">التوظيف</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="copyright">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="bottom-social-icons social-icon text-center">
+                     <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                     <a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                     <a href="#" target="_blank" class="dribble"><i class="fa fa-dribbble"></i></a>
+                     <a href="#" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a>
+                     <a href="#" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                     <a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                  <div class="site-info text-center">
+                     <p>© جميع الحقوق محفوظة لشركة زاد <br> صنع بـ <i
+                        class="fa fa-heart"></i> بواسطة <a target="_blank"
+                        href="https://ahmedbarbbud.com"><strong> احمد باربود</strong></a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <a href="create_post.html" data-toggle="tooltip" data-placement="left" title=""
+      class="btn btn-danger btn-lg post-free-add-btn" data-original-title="Post Your Ad"><i
+      class="fa fa-pencil"></i></a>
+   <a href="#" id="back-to-top" data-toggle="tooltip" data-placement="left" title="" class="btn btn-default btn-md"
+      data-original-title="Back To Top" style="display: none;"><i class="fa fa-chevron-up"></i></a>
+   <div id="accordion">
+      <div class="popup-box chat-popup">
+         <div class="popup-head">
+            <div class="popup-head-left pull-right">
+               <a data-toggle="collapse" data-parent="#accordion" href="#popup">
+               <img src="img/user/a1.png" alt=""> عبدالله السامري
+               <small>متصل</small>
+               </a>
+            </div>
+            <div class="popup-head-right pull-left">
+               <div class="btn-group">
+                  <button class="chat-header-button" data-toggle="dropdown" type="button" aria-expanded="false">
+                  <i class="glyphicon glyphicon-cog"></i> </button>
+                  <ul role="menu" class="dropdown-menu pull-right">
+                     <li><a href="#">مرفقات</a></li>
+                     <li><a href="#">تبيلغ عن سوء الخدمة</a></li>
+                     <li><a href="#">تبيلغ عن سوء الخدمة</a></li>
+                     <li><a href="#">إرسال المحادثة إلى الايميل</a></li>
+                  </ul>
+               </div>
+               <button data-toggle="collapse" data-parent="#accordion" href="#popup"
+                  class="chat-header-button pull-right" type="button"><i
+                  class="glyphicon glyphicon-off"></i></button>
+            </div>
+         </div>
+         <div id="popup" class="collapse">
+            <div class="popup-messages">
+               <div class="direct-chat-messages">
+                  <div class="chat-box-single-line">
+                     <abbr class="timestamp">October 8th, 2121</abbr>
+                  </div>
+                  <div class="direct-chat-msg doted-border">
+                     <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-left">Osahan</span>
+                     </div>
+                     <img alt="message user image" src="img/user/a1.png" class="direct-chat-img">
+                     <div class="direct-chat-text">
+                        مرحبا, كيف يمكنني مساعدتك؟
+                     </div>
+                     <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-timestamp pull-right">3.36 PM</span>
+                     </div>
+                     <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-img-reply-small pull-left">
+                        </span>
+                        <span class="direct-chat-reply-name">Singh</span>
+                     </div>
+                  </div>
+                  <div class="chat-box-single-line">
+                     <abbr class="timestamp">October 9th, 2121</abbr>
+                  </div>
+                  <div class="direct-chat-msg doted-border">
+                     <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-left">Osahan</span>
+                     </div>
+                     <img alt="" src="img/user/a1.png" class="direct-chat-img">
+                     <div class="direct-chat-text">
+                        هل يمكننا التواصل معك هاتفيا؟
+                     </div>
+                     <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-timestamp pull-right">3.36 PM</span>
+                     </div>
+                     <div class="direct-chat-info clearfix">
+                        <img alt="" src="img/user/a1.png" class="direct-chat-img big-round">
+                        <span class="direct-chat-reply-name">Singh</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="popup-messages-footer">
+               <textarea id="status_message" placeholder="Type a message..." rows="10" cols="40"
+                  name="message"></textarea>
+               <div class="btn-footer">
+                  <button class="bg_none"><i class="glyphicon glyphicon-film"></i> </button>
+                  <button class="bg_none"><i class="glyphicon glyphicon-camera"></i> </button>
+                  <button class="bg_none"><i class="glyphicon glyphicon-paperclip"></i> </button>
+                  <button class="bg_none pull-right"><i class="glyphicon glyphicon-thumbs-up"></i> </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="js/jquery.js" type="text/javascript"></script>
+   <script src="plugins/owl-carousel/owl.carousel.js"
+      type="text/javascript"></script>
+   <!-- Include js plugin -->
+   <script src="plugins/owl-carousel-rtl/owl.carousel.rtl.js"></script>
+   <script src="js/custom.js" type="text/javascript"></script>
+   <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

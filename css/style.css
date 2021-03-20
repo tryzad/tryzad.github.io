@@ -280,13 +280,13 @@ section {
 }
 
 .intro-title {
-	color: #ffffff;
+	color: #395e37;
 	font-size: 35px;
 	font-weight: 300;
 }
 
 .sub-title {
-	color: #ffffff;
+	color: #395e37;
 	font-size: 20px;
 	margin: 17px 0 53px;
 }
@@ -412,6 +412,7 @@ section {
 
 .main-search-box .search-input {
 	padding: 0 4px;
+	direction: rtl;
 }
 
 .top-categories {
@@ -638,6 +639,7 @@ section {
 
 .item-ads-grid .item-meta, .single-item-meta {
 	padding: 20px;
+	direction: rtl;
 }
 
 .item-title {
@@ -868,20 +870,20 @@ section {
 }
 
 .page_pagination ul> li> a, .page_pagination ul> li {
-	color: #1f1f1f;
+	color: #4a7747;
 	display: inline-block;
 	letter-spacing: 1px;
 	text-transform: capitalize;
 }
 
 .page_pagination ul> li> a:hover {
-	color: #000000;
+	color: #4a7747;
 }
 
 
 /* Categories Page Search */
 .categories-page-search {
-	background-image: url("../images/breadcumb.jpg");
+	background-image: url("../img/breadcumb.jpg");
 	position: relative;
 	width: 100%;
 	z-index: 0;
@@ -889,7 +891,7 @@ section {
 }
 
 .categories-page-search::after {
-	background-color: rgba(68, 17, 167, 0.93);
+	background-color: #B0DAB1;
 	content: "";
 	height: 100%;
 	left: 0;
@@ -900,7 +902,7 @@ section {
 }
 
 .categories-page-search .page_pagination ul > li > a, .categories-page-search .page_pagination ul > li {
-    color: #ffffff;
+    color: #4a7747;
 }
 
 /* Categories Page Nav */
@@ -1026,7 +1028,7 @@ section {
 }
 
 .filter-categories .shortcut-icon {
-	float: left;
+	float: right;
 	font-size: 11px !important;
 	height: 26px;
 	line-height: 26px !important;
@@ -1788,7 +1790,7 @@ footer {
 	border-radius: 12px;
 	content: "";
 	height: 3px;
-	left: 0;
+	right: 0;
 	position: absolute;
 	top: 36px;
 	width: 29px;
@@ -2514,6 +2516,7 @@ footer .copyright .fa-heart {
 	}
 	.item-ads-grid .item-meta, .single-item-meta {
 		padding: 15px;
+		direction: rtl
 	}
 	.listing-filter-block .widget-header {
 		border-bottom: 1px solid #ececec;
