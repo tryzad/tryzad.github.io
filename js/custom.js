@@ -18,7 +18,13 @@ Version: 1.0
 
 $(document).ready(function(){
     "use strict";
-    
+    function signup() {
+      alert("نشكر لك اهتمامك , الموقع تجريبي وسيتاح التسجيل لاحقاً");
+    }
+
+    function login() {
+      alert("نشكر لك اهتمامك , الموقع تجريبي وسيتاح تسجيل الدخول لاحقاً");
+    }
     // ===========Preloader============
     $(window).on('load', function(){
         $('#preloader').fadeOut('slow',function(){$(this).remove();});
